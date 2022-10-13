@@ -1,0 +1,66 @@
+body {
+    background-color:white;/* Цвет фона */
+    } 
+.h1 {
+    color: black;
+    font-size: 48px;
+    display: block;
+    margin: 0;
+    border: 0px solid #00a0ff;
+    font-weight: bold;
+    padding: 0;
+
+    }
+p {
+    display: inline;
+    font-size: 12px;
+    line-height: 1er;
+}
+span {
+    font-size: 14px;
+}
+
+td {
+    text-align: center;
+}
+.external, td{
+    border: 1px solid #00a0ff;
+    border-collapse: separate; /*  у ячейки одинарна рамка, 2 значения */
+    border-spacing: 0px 0px; /*  отступ ячеек */
+}
+caption{
+    caption-side: top;
+    font-size: 24px;
+}
+.inner-red {
+    border: 0px dotted white;
+    border-collapse: separate;
+    width: 160px;
+    background: rgb(221, 75, 75);
+}
+.inner-r {
+    border: 0px dotted white;
+    text-align: right;
+    font-size: 24px;
+    font-weight: semibold;
+    border-collapse: separate;
+}
+.inner-l {
+    border: 0px dotted white;
+    text-align: left;
+    font-size: 24px;
+    font-weight: semibold;
+    border-collapse: separate;
+}
+.inner-blue {
+    border: 0px dotted white;
+    border-collapse: separate;
+    width: 160px;
+    background: rgb(97, 192, 216);
+}
+.inner-yellow {
+    border: 0px dotted white;
+    border-collapse: separate;
+    width: 160px;
+    background: rgb(218, 221, 18);
+}
