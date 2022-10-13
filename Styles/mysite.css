@@ -1,0 +1,56 @@
+body {
+    background-color:white;/* Цвет фона */
+    } 
+/* домашнее задание от 01.09.2022 */
+.block-header {
+    width: 100%;
+    height: 50px;
+    background-color: #00a0fff;
+    float: none;
+    padding-top: 15px;
+    display: flex;
+    /*border: 1px solid #00a0ff;*/
+    margin-bottom: 15px;
+}
+.block-foto {
+    width: 30%;
+    height: 300px;
+    float: left;
+}
+.photo-1 {
+    background-image: url('../images/me.JPG');
+    background-position: center center;
+    height: 300px;
+    width: 100%; height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+.block-text {
+    width: 69%;
+    float: left;
+    height: 300px;
+    text-align: center;
+}
+.name {
+    display: inline;
+}
+.text-1 {
+    display: flex;
+    width: 45%;
+    height: 200px;
+    float: left;
+    padding: 15px;
+}
+
+.bloc-item {
+    float: left;
+    display: flex;
+    width: 30%;
+}
+.logo {
+    height: 50px;
+    width: 100px;
+    /*vertical-align: middle;*/
+}

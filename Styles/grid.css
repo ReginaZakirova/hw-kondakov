@@ -1,0 +1,61 @@
+*{
+
+}
+.flex-item, .flex-item-1 {
+    background-color: blueviolet;
+    padding: 40px;
+    /*margin-top: 5px; /*ф отступы элементам задаем*/
+    /*margin-left: 5px;
+    flex:1;*/
+}
+.container2{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.container3{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr; /*фракция интереснее чем %*/
+    /*grid-column-gap - расстояние (отступ) между столбцами */
+    grid-column-gap: 10px;
+    /*grid-row-gap - расстояние (отступы) между строчками */
+    grid-row-gap: 10px;
+    /*gridgap - расстояние (отступы) между строчками и столбцами */
+    grid-gap: 10px;
+} 
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*функция repeat повторяет нужное количество раз столбцы*/
+    grid-template-rows: 150px 150px 150px 150px; /* создалась пустая строка - всего их 4, можно через repeat*/
+    grid-gap: 10px;
+} 
+.flex-item-1 {
+    /*grid-column: 1/5; /* растягиваем 1 до 5*/
+}
+/*min-width: 600 // [600 .. +]*/
+/*max-widtt: 599 // [0 .. 599]*/
+/*media - задает размер экрана*/
+/*оператоы and или or*/
+@media screen and (min-width: 600px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    .flex-item, .flex-item-1 {
+        background-color: green;
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 499px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    .flex-item, .flex-item-1 {
+        background-color: red;
+        padding: 40px;
+    }
+}
+
